@@ -145,6 +145,7 @@ return [
             'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.language',
             'config' => [
                 'type' => 'select',
+                'default' => 0,
                 'renderType' => 'selectSingle',
                 'foreign_table' => 'sys_language',
                 'foreign_table_where' => 'ORDER BY sys_language.title',
@@ -275,7 +276,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim, required, nospace'
+                'eval' => 'trim, required, nospace',
+                'default' => ''
             ]
         ],
         'internal_page' => [
@@ -312,7 +314,8 @@ return [
                 'type' => 'input',
                 'size' => 30,
                 'eval' => 'trim, required',
-                'softref' => 'substitute'
+                'softref' => 'substitute',
+                'default' => '',
             ]
         ],
         'internal_file' => [
@@ -325,7 +328,8 @@ return [
                 'show_thumbs' => 1,
                 'size' => 1,
                 'minitems' => 1,
-                'maxitems' => 1
+                'maxitems' => 1,
+                'default' => '',
             ]
         ],
         'path' => [
@@ -334,7 +338,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim, required, nospace'
+                'eval' => 'trim, required, nospace',
+                'default' => '',
             ]
         ],
         'domain' => [
